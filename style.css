@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    height: 100%;
+    background-color: #c02e2e;
+}
+
+.container {
+    width: 70%;
+    height: 70%;
+    margin: 1% auto;
+}
+.myTable{
+	color:rgb(250, 239, 239);
+	padding: 10px;	
+	margin: auto;
+    width: 800px;
+    border-spacing: 120px 15px
+}
+#td{
+    width: 200px;
+}
+.ui {
+    border: 0;
+    box-shadow: 0 0 10px 0 rgba(14, 113, 184, 0.5);
+    border-radius: 10px;
+    width: 60%;
+    margin: 0 auto;
+    padding: 10%;
+    display: flex;
+    gap: 20px;
+    background-color: rgb(19, 85, 36);
+}
+
+.container-left {
+    width: 50%;
+}
+
+.container-right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    width: 360px;
+    height: 230px;
+    margin: 0 auto;
+    background: linear-gradient(148deg, rgba(78,0,255,1) 13%, rgba(112,51,255,1) 41%, rgba(132,79,255,1) 68%, rgba(156,113,255,1) 90%);
+    border: 1px solid rgba(117, 185, 182, 0.3);
+    border-radius: 15px;
+}
+
+.intern {
+    padding: 20px;
+}
+
+.card-number {
+    margin-top: 40px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    display: flex;
+}
+.bank {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    display: flex;
+}
+
+.card-holder {
+    color: whitesmoke;
+}
+
+.card label {
+    font-size: .7rem;
+}
+
+.card-infos {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    color: white;
+}
+
+#creditcard {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 1.1rem;
+    color: white;
+    text-transform: uppercase;
+}
+
+.number-container, .name-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.month-container, .year-container {
+    width: 50%;
+}
+.system{
+  width: 40%;
+    position: relative;
+    left: 65%;
+    bottom: 10px;
+}
+select {
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #333333;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    outline: 0;
+    width: 95%;
+}
+input {
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #333333;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    outline: 0;
+    width: 90%;
+}
+
+input[type="text"]:focus {
+    border: 1px solid #95B8D1;
+}
+
+input#valid-thru-text {
+    width: 80%;
+}
+
+input[type="submit"] {
+    width: 95%;
+    background-color: #008cb1;
+    cursor: pointer;
+}
+
+.infos-container {
+    display: flex;
+}
+
+@media (max-width: 1024px) {
+    .ui {
+        flex-direction: column-reverse;
+    }
+
+    .container-left, .container-right {
+        width: 100%;
+    }
+}
